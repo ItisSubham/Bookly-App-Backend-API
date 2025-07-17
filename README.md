@@ -1,73 +1,55 @@
-# 📚 Bookly
+<p align="center">
+  <img src="./Bookly.png" alt="Bookly Logo" width="80" />
+</p>
 
-Bookly is a full-stack application for book lovers to discover, share, and manage their reading experiences. It consists of a backend (Node.js/Express/MongoDB) and a mobile frontend (React Native/Expo).
+# 📚 Bookly Backend
 
-## Features
+Bookly is a full-stack platform for book lovers to discover, share, and manage their reading experiences. This repository contains the backend API built with Node.js, Express, and MongoDB. The mobile frontend is built with React Native and Expo.
 
-- User authentication (signup, login, JWT)
-- Profile with avatar (DiceBear Adventurer)
-- Book CRUD (create, read, update, delete)
-- User profile management
-- Cloudinary integration for image uploads
-- Loader and UI feedback components
-- Expo mobile app with tabbed navigation
+## 🚀 Features
 
-## Tech Stack
+- 🔐 User authentication (signup, login, JWT)
+- 👤 Profile with avatar (DiceBear Adventurer)
+- 📚 Book CRUD (create, read, update, delete)
+- 📝 User profile management
+- 🖼️ Cloudinary integration for image uploads
+- ⚡ Loader and UI feedback components
+- 📱 Expo mobile app with tabbed navigation
+
+## 🛠️ Tech Stack
 
 - **Backend:** Node.js, Express, MongoDB, Mongoose
 - **Frontend:** React Native, Expo
 - **Other:** Cloudinary, DiceBear Adventurer
 
-## Backend Setup
+## ⚙️ Backend Setup
 
-1. Navigate to the `backend` folder:
+1. **Clone the repository**
    ```sh
-   cd backend
+   git clone https://github.com/ItisSubham/Bookly-App-Backend-API.git
+   cd Bookly-App-Backend-API
    ```
-2. Install dependencies:
+2. **Install dependencies**
    ```sh
    npm install
    ```
-3. Create a `.env` file with your MongoDB URI and Cloudinary credentials:
-   ```env
-   MONGODB_URI=your_mongodb_uri
-   CLOUDINARY_CLOUD_NAME=your_cloud_name
-   CLOUDINARY_API_KEY=your_api_key
-   CLOUDINARY_API_SECRET=your_api_secret
-   JWT_SECRET=your_jwt_secret
-   ```
-4. Start the server:
+3. **Start the server**
    ```sh
    npm start
    ```
 
-## Mobile App Setup
 
-1. Navigate to the `mobile` folder:
-   ```sh
-   cd mobile
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the Expo app:
-   ```sh
-   npx expo start
-   ```
-4. Scan the QR code with Expo Go or run on an emulator.
+## 📚 API Endpoints
 
-## API Endpoints
+- `POST /api/auth/signup` — Register a new user
+- `POST /api/auth/login` — Login and get JWT
+- `GET /api/books` — List all books
+- `POST /api/books` — Add a new book
+- `PUT /api/books/:id` — Update a book
+- `DELETE /api/books/:id` — Delete a book
+- `GET /api/users/:id` — Get user profile
 
-- `POST /api/auth/signup` - Register a new user
-- `POST /api/auth/login` - Login and get JWT
-- `GET /api/books` - List all books
-- `POST /api/books` - Add a new book
-- `PUT /api/books/:id` - Update a book
-- `DELETE /api/books/:id` - Delete a book
-- `GET /api/users/:id` - Get user profile
-
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 backend/
@@ -85,17 +67,8 @@ backend/
     routes/
       authRoutes.js
       bookRoutes.js
-mobile/
-  app/
-    (auth)/
-    (tabs)/
-    assets/
-    components/
-    constants/
-    lib/
-    store/
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
